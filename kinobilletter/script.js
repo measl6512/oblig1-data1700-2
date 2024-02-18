@@ -17,6 +17,12 @@ function visBilletter(){
 
     let isValid = true;
     
+    // Valider antall billetter
+    if (gittnavn.trim() === "" || /\d/.test(gittnavn))  {
+        document.getElementById("antallError").textContent = "Må skrive antall billetter*";
+        document.getElementById("fornavnError").style.color = "red"; // Endre tekstfargen til rød
+        isValid = false;
+    }
     // Valider fornavn
     if (gittnavn.trim() === "" || /\d/.test(gittnavn))  {
         document.getElementById("fornavnError").textContent = "Må skrive noe i fornavnet*";
