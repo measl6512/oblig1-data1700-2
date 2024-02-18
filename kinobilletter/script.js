@@ -9,43 +9,6 @@ function visBilletter(){
     let tlf = document.getElementById("telefon").value;
     let mail = document.getElementById("epost").value;
 
-    // Nullstill feilmeldinger
-    document.getElementById("fornavnError").textContent = "";
-    document.getElementById("etternavnError").textContent = "";
-    document.getElementById("telefonError").textContent = "";
-    document.getElementById("epostError").textContent = "";
-
-    let isValid = true;
-
-    // Valider fornavn
-    if (gittnavn.trim() === "") {
-        document.getElementById("fornavnError").textContent = "Må skrive noe i fornavnet";
-        isValid = false;
-    }
-
-    // Valider etternavn
-    if (slektsnavn.trim() === "") {
-        document.getElementById("etternavnError").textContent = "Må skrive noe i etternavnet";
-        isValid = false;
-    }
-
-    // Valider telefonnummer
-    if (tlf.trim() === "") {
-        document.getElementById("telefonError").textContent = "Må skrive noe i telefonnummeret";
-        isValid = false;
-    }
-
-    // Valider e-postadresse
-    if (mail.trim() === "") {
-        document.getElementById("epostError").textContent = "Må skrive noe i e-postadressen";
-        isValid = false;
-    }
-
-    if (!isValid) {
-        // Avbryt billettkjøpet hvis validering mislykkes
-        return;
-    }
-
     const billett1 = {
         filmer: kjøptFilm,
         antall: antallBilletter,
@@ -91,3 +54,4 @@ function slettBilletter(){
     console.log(billetter);
     ut();
 }
+
