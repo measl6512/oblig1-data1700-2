@@ -20,24 +20,28 @@ function visBilletter(){
     // Valider fornavn
     if (gittnavn.trim() === "" || /\d/.test(gittnavn))  {
         document.getElementById("fornavnError").textContent = "Må skrive noe i fornavnet*";
+        document.getElementById("fornavnError").style.color = "red"; // Endre tekstfargen til rød
         isValid = false;
     }
 
     // Valider etternavn
     if (slektsnavn.trim() === "" || /\d/.test(slektsnavn)) {
         document.getElementById("etternavnError").textContent = "Må skrive noe i etternavnet*";
+        document.getElementById("etternavnError").style.color = "red"; // Endre tekstfargen til rød
         isValid = false;
     }
     
     // Valider telefonnummer
     if (tlf.trim() === "" || !Number(tlf) || tlf.length !==8) {
-        document.getElementById("telefinError").textContent = "Må skrive noe i telefonnummeret*";
+        document.getElementById("telefonError").textContent = "Må skrive noe i telefonnummeret*";
+        document.getElementById("telefonError").style.color = "red"; // Endre tekstfargen til rød
         isValid = false;
     }
 
     // Valider e-postadresse
    if (mail.trim() === "" || !mail.includes("@") || !mail.includes(".")) {
         document.getElementById("epostError").textContent = "Må skrive noe i e-postadressen*";
+        document.getElementById("epostError").style.color = "red"; // Endre tekstfargen til rød
         isValid = false;
     }
 
