@@ -12,7 +12,7 @@ function visBilletter(){
     // Nullstill feilmeldinger
     document.getElementById("fornavnError").textContent = "";
     document.getElementById("etternavnError").textContent = "";
-    document.getElementById("telefinError").textContent = "";
+    document.getElementById("telefonError").textContent = "";
     document.getElementById("epostError").textContent = "";
 
     let isValid = true;
