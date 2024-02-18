@@ -1,19 +1,20 @@
 let billettene = [];
-function kjopBillett() {
-    let valgtFilm = document.getElementById("filmer").value;
-    let valgteBilletter = document.getElementById("antallBillett").value;
-    let valgtFornavn = document.getElementById("velgFornavn").value;
-    let valgtEtternavn = document.getElementById("velgEtternavn").value;
-    let valgtTelefonnummer = document.getElementById("velgTelefonnummer").value;
-    let valgtEpost = document.getElementById("velgEpost").value;
+
+function visBilletter() {
+    let kjøptFilm = document.getElementById("filmer").value;
+    let valgteBilletter = document.getElementById("antallBilletter").value;
+    let valgtFornavn = document.getElementById("Fornavn").value;
+    let valgtEtternavn = document.getElementById("Etternavn").value;
+    let valgtTelefonnummer = document.getElementById("Telefonnummer").value;
+    let valgtEpost = document.getElementById("Epost").value;
 
     const billett1 = {
-        film: valgtFilm,
-            antall: valgteBilletter,
-            fornavn: valgtFornavn,
-            etternavn: valgtEtternavn,
-            telefonnummer: valgtTelefonnummer,
-            epost: valgtEpost
+        filmer: kjøptFilm,
+        antall: antallBilletter,
+        fornavn: gittnavn,
+        etternavn: slektsnavn,
+        telefonnummer: valgtTelefonnummer,
+        epost: Epost
     };
 
     if(billett1.antall === ""){
