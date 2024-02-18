@@ -1,0 +1,18 @@
+Dette prosjektet inneholder et enkelt kinobillettbestillingssystem implementert med HTML, CSS og JavaScript. 
+Systemet lar brukerne velge en film, angi antall billetter, samt legge inn personlig informasjon som fornavn, etternavn, telefonnummer og e-postadresse. 
+Etter at brukeren har sendt inn bestillingen, vises informasjonen om kjøpte billetter på skjermen.
+
+OPPGAVEBESKRIVELSE
+Visning av Kinobilletter: Brukere kan velge en film fra en rullegardinmeny, angi antall billetter de ønsker å kjøpe, og legge inn personlig informasjon. 
+Etter at de har sendt inn bestillingen, vises informasjonen om kjøpte billetter på skjermen.
+Inputvalidering: Implementert validering av inputfeltene for å sikre at brukerne angir gyldig informasjon. 
+Fornavn og etternavn må være fylt ut, og telefonnummer og e-postadresse må være gyldige.
+
+Åpne index.html i en nettleser.
+Velg en film fra rullegardinmenyen.
+Angi antall billetter.
+Fyll ut personlig informasjon.
+Klikk på "Kjøp billett" for å fullføre bestillingen.
+Kjøpte billetter vises på skjermen. Trykk på "Slett Alle Billetter" for å nullstille listen over kjøpte billetter.
+
+Av, measl6512@oslomet.no
