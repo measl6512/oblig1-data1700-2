@@ -7,3 +7,40 @@
 </head>
 <body>
 
+    <h1>Bestilling av Kinobilletter</h1>
+
+    <label for="filmer">Velg film</label>
+    <select id="filmer">
+        <option value="Velg film">Velg film</option>
+        <option value="Bob Marley: One Love">Bob Marley: One Love</option>
+        <option value="Madame Web">Madame Web</option>
+        <option value="Bodyguard">Bodyguard</option>
+    </select><br><br>
+    
+    <label for="antallBillett">Antall</label>
+    <input id="antallBillett" type="text">
+    <span id="feilAntall" style="color: red"></span><br><br>
+    
+    <label for="velgFornavn">Fornavn</label>
+    <input id="velgFornavn" type="text">
+    <span id="feilFornavn" style="color: red"></span><br><br>
+    
+    <label for="velgEtternavn">Etternavn</label>
+    <input id="velgEtternavn" type="text">
+    <span id="feilEtternavn" style="color: red"></span><br><br>
+    
+    <label for="velgTelefonnummer">Telefonnummer</label>
+    <input id="velgTelefonnummer" type="text">
+    <span id="feilTelefonnummer" style="color: red"></span><br><br>
+    
+    <label for="velgEpost">E-post</label>
+    <input id="velgEpost" type="text">
+    <span id="feilEpost" style="color: red"></span><br><br>
+    
+    <button onclick="kjopBillett();">Kjøp billett</button>
+    
+    <h2>Alle billetter</h2>
+    
+    <div id="utskrift"></div><br><br>
+    
+    <button onclick="slettBillett()">Slett alle billettene</button>
