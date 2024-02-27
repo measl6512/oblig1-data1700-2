@@ -9,31 +9,33 @@
     <h1>Bestilling av Kinobilletter</h1>    
         <label>Velg Film</label>
     <select id="filmer">
-    <option value="velg-flm">Velg film</option>
+    <option value="velg-film">Velg film</option>
         <option value="Madame Web">Madame Web</option>
         <option value="Bob Marley: One Love">Bob Marley: One Love</option>
         <option value="Verdens Verste Menneske">Verdens Verste Menneske</option>
         <option value="Oppdrag Nemo">Oppdrag Nemo</option>
-    </select><br><br>
+    </select>
+    <span id="velgFilmError" class="error"></span>
+    <br><br>
 
     <label for="antallBilletter">Antall Billetter</label>
-    <input id="antallBilletter" type="text"><br><br>
-    
+    <input id="antallBilletter" type="number">
+    <span id="antallError" class="error"></span><br><br>
 
     <label for="fornavn">Fornavn</label>
-    <input id="fornavn" type="text"><br><br>
+    <input id="fornavn" type="text">
     <span id="fornavnError" class="error"></span><br><br>
 
     <label for="etternavn">Etternavn</label>
-    <input id="etternavn" type="text"><br><br>
+    <input id="etternavn" type="text">
     <span id="etternavnError" class="error"></span><br><br>
 
     <label for="telefon">Telefon</label>
-    <input id="telefon" type="text"><br><br>
+    <input id="telefon" type="number">
     <span id="telefonError" class="error"></span><br><br>
 
     <label for="epost">E-post</label>
-    <input id="epost" type="text"><br><br>
+    <input id="epost" type="email">
     <span id="epostError" class="error"></span><br><br>
 
     <button onclick="visBilletter()">Kjøp billett</button>
